@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <ul class="menu-bar">
+            <li><button id="newGameBtn" class="headButton">Play Again</button></li>
+            <li><button id="onePlayerBtn" class="headButton"> One Player</button></li>
+            <li><button id="twoPlayerBtn" class="headButton">Two Players</button></li>
+        </ul>
+    </header>
+    <header>
+        <div class="playerNames" id="names">
+            <input id="playerOne" class="input" type="text" placeholder="X Player name:">
+            <p>VS</p>
+            <input id="playerTwo" class="input" type="text" placeholder="O Player name:">
+        </div>
+    </header>
+
+    <div id="parent">
+        <table id="cellContainer">
+
+            <div id="winner"></div>
+            <tr>
+                <td>
+                    <div id="0" cellIndex="0" class="cell"></div>
+                </td>
+                <td>
+                    <div id="1" cellIndex="1" class="cell"></div>
+                </td>
+                <td>
+                    <div id="2" cellIndex="2" class="cell"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="3" cellIndex="3" class="cell"></div>
+                </td>
+                <td>
+                    <div id="4" cellIndex="4" class="cell"></div>
+                </td>
+                <td>
+                    <div id="5" cellIndex="5" class="cell"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="6" cellIndex="6" class="cell"></div>
+                </td>
+                <td>
+                    <div id="7" cellIndex="7" class="cell"></div>
+                </td>
+                <td>
+                    <div id="8" cellIndex="8" class="cell"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

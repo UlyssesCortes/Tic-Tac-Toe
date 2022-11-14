@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    user-select: none;
+}
+
+body,
+header {
+    background-color: rgb(238, 236, 234);
+}
+
+#parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 8px;
+    box-shadow: 0 0 0 2px;
+    font-size: 50px;
+    cursor: pointer;
+    background: #a5dee4;
+    border: 1px dotted rgb(48, 34, 34);
+}
+
+.cell:hover {
+    background-color: #494b52;
+    color: white;
+}
+
+#winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* header style */
+header,
+.playerNames {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.menu-bar,
+.playerNames {
+    display: flex;
+    flex-grow: 0;
+    border-radius: 25px;
+    height: fit-content;
+    display: inline-flex;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    align-items: center;
+    padding: 5px 40px;
+    margin: 20px 0 0 0;
+    gap: 25px;
+}
+
+.menu-bar li,
+.headButton {
+    display: flex;
+    background-color: rgba(0, 0, 0, .0);
+    list-style-type: none;
+    font-size: 25px;
+    border: none;
+    padding: 2px;
+}
+
+.menu-bar li button:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.playerNames {
+    height: 30px;
+    gap: 2px;
+    background-color: rgba(161, 150, 150, 0.4);
+    border-radius: 25px;
+    padding-right: 0px;
+    padding-left: 70px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .0);
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    width: 170px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#playerTwo {
+    margin-left: 50px;
+}
+
+::placeholder {
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+}
+
+.modeSelected {
+    border-radius: 10px;
+    border-right: rgb(60, 79, 87) groove 3px;
+    border-left: rgb(60, 79, 87) groove 3px;
+}
+
+.turnBorder {
+    border-radius: 9px;
+    border-bottom: rgb(0, 0, 0) solid 2px;
+}
+
+.winnerCells {
+    background: #e79c56;
+}
+
+.drawBorder {
+    padding: 5px;
+    border-bottom: rgb(0, 0, 0) solid 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .cell {
+        font-family: cursive;
+    }
+}
